@@ -1,0 +1,10 @@
+#include "$ROOTIOROOT/share/jobOptions_ReadRec.txt"
+#include "$VERTEXFITROOT/share/jobOptions_VertexDbSvc.txt"
+#include "$MAGNETICFIELDROOT/share/MagneticField.txt"
+#include "$ABSCORROOT/share/jobOptions_AbsCor.txt"
+#include "$KSKPIPIALGROOT/share/jobOptions_KSKPiPi.txt"
+
+//BesNavigatorInit.OutputLevel = 6;
+
+// Input REC or DST file name 
+EventCnvSvc.digiRootInputFile = {
