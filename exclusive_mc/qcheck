@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "#!/bin/bash"
+
+rm qtmp
+qstat -u caih > qtmp
+
+for i in $(seq $2) 
+do
+ii=$(printf "%0.3d" $i)
+str=`grep "_$ii.txt" tmp`
+if [ -z "$str" ]; then
+    strq=`grep "_$ii.txt" qtmp`
+    if [ -z "$strq" ]; then
+        echo $1_$ii.txt.boss
+    fi
+fi
+done
+
+echo
+
