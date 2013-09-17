@@ -236,7 +236,7 @@ do
   echo "#!/bin/tcsh -f" > $pbsfile
   echo "#PBS -o $outfile" >> $pbsfile
   echo "#PBS -e $errfile" >> $pbsfile
-  echo "setenv exe '/afs/ihep.ac.cn/bes3/offline/Boss/6.6.3.p01/InstallArea/i386_linux26/bin/boss.exe'" >> $pbsfile
+  echo "setenv exe '/afs/ihep.ac.cn/bes3/offline/Boss/6.6.3.p01/InstallArea/x86_64-slc5-gcc43-opt/bin/boss.exe'" >> $pbsfile
   echo "cd `pwd`" >> $pbsfile
   echo time '$'exe $jobfile >> $pbsfile
 
